@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const url = 'http://localhost:5000/posts';
+// const url = 'http://localhost:5000/posts';
+const url = 'https://travelapp-backend-ifo6.onrender.com';
 
 export const fetchPosts = () => {
     return axios.get(url);
