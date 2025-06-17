@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82d54802-fce7-4ccf-b914-75cb73ea0d1c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/actions/postsActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/destination.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Form/Form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Posts/Post/Post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Posts/Posts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/reducers/postsReducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/postsController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/postMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/posts.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "teodorapop"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/teodorapop/travel-app.git",
+    "accountId": "b9a00011-ce09-42be-b42c-c82cd131ce36"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2y2wIFIwcfeRyBClRhbTlQePepF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/User/WebstormProjects/TravelProject/client/src/assets/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\TravelProject\client\src\assets\images" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82d54802-fce7-4ccf-b914-75cb73ea0d1c" name="Changes" comment="" />
+      <created>1749045894962</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749045894962</updated>
+      <workItem from="1749045896043" duration="1742000" />
+      <workItem from="1749112309414" duration="12438000" />
+      <workItem from="1749194956958" duration="1441000" />
+      <workItem from="1749197501898" duration="3761000" />
+      <workItem from="1749228774737" duration="1820000" />
+      <workItem from="1749281826409" duration="11128000" />
+      <workItem from="1749371938827" duration="9528000" />
+      <workItem from="1749455153537" duration="3730000" />
+      <workItem from="1749462961027" duration="2301000" />
+      <workItem from="1749541716453" duration="811000" />
+      <workItem from="1749550924220" duration="4865000" />
+      <workItem from="1749627929904" duration="1293000" />
+      <workItem from="1749643592593" duration="7000" />
+      <workItem from="1749733274482" duration="6229000" />
+      <workItem from="1749800352943" duration="6883000" />
+      <workItem from="1749886310034" duration="10617000" />
+      <workItem from="1749972673366" duration="14085000" />
+      <workItem from="1750056116696" duration="8558000" />
+      <workItem from="1750148946612" duration="11517000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
