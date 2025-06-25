@@ -108,7 +108,7 @@ const Auth = () => {
 
                 <div className="mt-4 w-full flex justify-center">
                     <GoogleLogin
-                        onSuccess={googleSucces}
+                        onSuccess={googleSuccess}
                         onError={googleFail}
                         size="large"
                         text="signin_with"
