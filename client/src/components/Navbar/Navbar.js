@@ -19,12 +19,13 @@ const Navbar = () => {
     }, []);
 
     const logout = () => {
-        dispatch({ type: 'LOGOUT'});
-
-        localStorage.removeItem("profile"); // ștergem user-ul
-        setUser(null); // resetăm state-ul
-        navigate("/"); // navigăm acasă
+        dispatch({ type: 'LOGOUT' });
+        localStorage.removeItem("profile");
+        setUser(null);
+        navigate("/");
+        window.location.reload(); // refresh
     };
+
 
     return (
         <div className="flex justify-between items-center border-b border-gray-300 shadow-md px-6 py-4">
@@ -34,7 +35,7 @@ const Navbar = () => {
                 <h1 className="text-xl text-gray-800 font-semibold">Travel Memories</h1>
             </Link>
 
-            {/* AUTENTIFICARE */}
+            {/* AUTH */}
             <div>
                 {user ? (
                     <div className="flex items-center space-x-4">

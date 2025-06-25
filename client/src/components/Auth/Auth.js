@@ -50,7 +50,7 @@ const Auth = () => {
     };
 
     const googleFail = () => {
-        console.log("Error. Try again. ");
+        console.log("Error. Try again.");
     }
 
     return (
