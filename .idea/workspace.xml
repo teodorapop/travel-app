@@ -5,26 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82d54802-fce7-4ccf-b914-75cb73ea0d1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/actions/postsActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/images/destination.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Form/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Posts/Post/Post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Posts/Posts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/constants/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/reducers/postsReducers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/postsController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/postMessage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/posts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Auth/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Auth/input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Home/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Navbar/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/reducers/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middleware/authMid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/userModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Form/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Form/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Posts/Post/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Posts/Post/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/constants/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/postsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/postsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/postMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/postMessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +40,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "teodorapop"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;teodorapop&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/teodorapop/travel-app.git",
-    "accountId": "b9a00011-ce09-42be-b42c-c82cd131ce36"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/teodorapop/travel-app.git&quot;,
+    &quot;accountId&quot;: &quot;b9a00011-ce09-42be-b42c-c82cd131ce36&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -54,25 +60,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/WebstormProjects/TravelProject/client/src/assets/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/WebstormProjects/TravelProject/client/src/assets/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2025.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\TravelProject\client\src\assets\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\TravelProject\client" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -107,7 +116,25 @@
       <workItem from="1749886310034" duration="10617000" />
       <workItem from="1749972673366" duration="14085000" />
       <workItem from="1750056116696" duration="8558000" />
-      <workItem from="1750148946612" duration="11517000" />
+      <workItem from="1750148946612" duration="14357000" />
+      <workItem from="1750246052481" duration="169000" />
+      <workItem from="1750249798548" duration="3695000" />
+      <workItem from="1750262497005" duration="2327000" />
+      <workItem from="1750320207509" duration="3974000" />
+      <workItem from="1750345307187" duration="1654000" />
+      <workItem from="1750407765677" duration="8705000" />
+      <workItem from="1750494334956" duration="12994000" />
+      <workItem from="1750564194304" duration="6545000" />
+      <workItem from="1750579611363" duration="11957000" />
+      <workItem from="1750609761473" duration="963000" />
+      <workItem from="1750674826936" duration="623000" />
+      <workItem from="1750677109687" duration="7533000" />
+      <workItem from="1750699795250" duration="230000" />
+      <workItem from="1750707940696" duration="2777000" />
+      <workItem from="1750775936699" duration="714000" />
+      <workItem from="1750840579119" duration="5308000" />
+      <workItem from="1750855698842" duration="2184000" />
+      <workItem from="1750858012028" duration="1724000" />
     </task>
     <servers />
   </component>

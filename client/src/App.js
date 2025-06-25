@@ -1,42 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import logo from './assets/images/destination.png';
-import Posts from "./components/Posts/Posts";
-import Form from "./components/Form/Form";
-import {getPosts} from './actions/postsActions';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
-import {useDispatch} from 'react-redux'; // dispatch an action
+import Navbar from "./components/Navbar/Navbar";
+import Auth from "./components/Auth/Auth";
+import Home from "./components/Home/Home";
 
 const App = () => {
 
-    const [currentId, setCurrentId] = useState(null);
-
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        dispatch(getPosts());
-    }, [dispatch]);
-
-    return(
-        <div className='p-4 '>
-            <div className='flex items-center space-x-3 border-b border-gray-300 shadow-md p-4'>
-                <img src={logo} alt='logo' className='h-10 w-auto' />
-                <h1 className='text-xl text-gray-800'>Travel Memories</h1>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
-                {/* Postările ocupă 3 coloane */}
-                <div className="md:col-span-3">
-                    <Posts setCurrentId={setCurrentId} />
+    return (
+        <GoogleOAuthProvider clientId={process.env.REACT_APP_PUBLIC_GOOGLE_API_TOKEN}>
+            <BrowserRouter>
+                <div className='p-4'>
+                    <Navbar />
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/auth' element={<Auth />} />
+                    </Routes>
                 </div>
-
-                {/* Formularul ocupă 1 coloană */}
-                <div className="md:col-span-1">
-                    <Form currentId={currentId} setCurrentId={setCurrentId} />
-                </div>
-            </div>
-
-        </div>
-    )
+            </BrowserRouter>
+        </GoogleOAuthProvider>
+    );
 }
 
 export default App;

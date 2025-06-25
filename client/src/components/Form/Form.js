@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 const Form = ({ currentId, setCurrentId}) => {
 
     const [postData, setPostData] = useState({
-        creator: '',
+        // creator: '',
         title: '',
         message: '',
         tags: '',
@@ -23,26 +23,36 @@ const Form = ({ currentId, setCurrentId}) => {
 
     const dispatch = useDispatch();
 
+    const user = JSON.parse(localStorage.getItem("profile"));
+
     useEffect(() => {
         if(post) setPostData(post);
     }, [post])
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault();
 
-        if(currentId){
-            dispatch(updatePost(currentId, postData));
+        if(!currentId){
+            dispatch(createPost({...postData, name: user?.result?.name}));
             clear();
         } else {
-            dispatch(createPost(postData));
+            dispatch(updatePost(currentId, {...postData, name: user?.result?.name}));
             clear();
         }
+    }
+
+    if(!user?.result?.name){
+        return(
+            <div>
+                <p>Please sign in to create your own memories and like other's memories.</p>
+            </div>
+        )
     }
 
     const clear = () => {
         setCurrentId(null);
         setPostData({
-            creator: '',
+            // creator: '',
             title: '',
             message: '',
             tags: '',
@@ -72,17 +82,17 @@ const Form = ({ currentId, setCurrentId}) => {
                 <h2 className="text-2xl font-semibold text-gray-800">{ currentId ? 'Editing' : 'Creating' } a Memory</h2>
 
                 {/* Creator */}
-                <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Creator</label>
-                    <input
-                        type="text"
-                        name="creator"
-                        value={postData.creator}
-                        onChange={(e) => setPostData({ ...postData, creator: e.target.value })}
-                        className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        placeholder="Enter your name"
-                    />
-                </div>
+                {/*<div>*/}
+                {/*    <label className="block text-sm font-medium text-gray-700 mb-1">Creator</label>*/}
+                {/*    <input*/}
+                {/*        type="text"*/}
+                {/*        name="creator"*/}
+                {/*        value={postData.creator}*/}
+                {/*        onChange={(e) => setPostData({ ...postData, creator: e.target.value })}*/}
+                {/*        className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"*/}
+                {/*        placeholder="Enter your name"*/}
+                {/*    />*/}
+                {/*</div>*/}
 
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Title</label>
