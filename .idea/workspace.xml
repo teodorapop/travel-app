@@ -5,32 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82d54802-fce7-4ccf-b914-75cb73ea0d1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Auth/Auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Auth/input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Home/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/reducers/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/middleware/authMid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/userModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Form/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Form/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Posts/Post/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Posts/Post/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/constants/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/postsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/postsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/postMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/postMessage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +111,8 @@
       <workItem from="1750775936699" duration="714000" />
       <workItem from="1750840579119" duration="5308000" />
       <workItem from="1750855698842" duration="2184000" />
-      <workItem from="1750858012028" duration="1724000" />
+      <workItem from="1750858012028" duration="2139000" />
+      <workItem from="1750861755310" duration="417000" />
     </task>
     <servers />
   </component>

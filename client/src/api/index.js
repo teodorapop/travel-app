@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://travelapp-backend-ifo6.onrender.com/posts' });
+const API = axios.create({ baseURL: 'https://travelapp-backend-ifo6.onrender.com' });
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('profile')){

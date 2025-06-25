@@ -38,7 +38,7 @@ const Auth = () => {
     handleShowPassword(false);
     }
 
-    const googleSucces = async (res) => {
+    const googleSuccess = async (res) => {
         try {
             const decoded = jwtDecode(res?.credential);
             // decoded acum conține { name, email, picture, sub, ... }
