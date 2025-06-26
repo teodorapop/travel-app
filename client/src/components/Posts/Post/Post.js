@@ -11,6 +11,8 @@ const Post = ({ post, setCurrentId }) => {
     const dispatch = useDispatch();
     const user = JSON.parse(localStorage.getItem('profile'));
 
+    // console.log(post.isPublic);
+
     const Likes = () => {
         if (post.likes.length > 0) {
             const isLikedByUser = post.likes.includes(
@@ -73,8 +75,11 @@ const Post = ({ post, setCurrentId }) => {
                     </button>
                 )}
 
-            </div>
+                <div className="absolute bottom-2 right-2  text-white text-xs font-semibold rounded px-2 py-1">
+                    {post.isPublic === 'public' ? 'Public' : 'Private'}
+                </div>
 
+            </div>
 
             <div className="p-4">
 
@@ -87,6 +92,7 @@ const Post = ({ post, setCurrentId }) => {
                 <h2 className="text-xl font-bold text-gray-800 mb-2">
                     {post.title}
                 </h2>
+
                 <h5 className="text-sm text-gray-700 mb-4">
                     {post.message}
                 </h5>

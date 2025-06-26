@@ -15,7 +15,7 @@ const Form = ({ currentId, setCurrentId}) => {
         message: '',
         tags: '',
         selectedFile: '',
-        visibility: ''
+        isPublic: true,
     });
 
     // update post
@@ -31,6 +31,12 @@ const Form = ({ currentId, setCurrentId}) => {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
+
+        const newData = {
+            ...postData,
+            isPublic: postData.isPublic === "public",
+            name: user?.result?.name,
+        };
 
         if(!currentId){
             dispatch(createPost({...postData, name: user?.result?.name}));
@@ -57,7 +63,7 @@ const Form = ({ currentId, setCurrentId}) => {
             message: '',
             tags: '',
             selectedFile: '',
-            visibility: ''
+            isPublic: ''
         });
     };
 
@@ -137,8 +143,8 @@ const Form = ({ currentId, setCurrentId}) => {
                     <label className="block text-sm font-medium text-gray-700 mb-1">Visibility</label>
                     <select
                         name="visibility"
-                        value={postData.visibility}
-                        onChange={(e) => setPostData({ ...postData, visibility: e.target.value })}
+                        value={postData.isPublic}
+                        onChange={(e) => setPostData({ ...postData, isPublic: e.target.value })}
                         className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                         <option value="">Select visibility</option>

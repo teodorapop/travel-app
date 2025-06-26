@@ -16,7 +16,12 @@ export const createPost = async (req, res) => {
     // res.send('post creation here')
     const body = req.body;
 
-    const newPost = new PostMessage({...body, creator: req.userId, createdAt: new Date().toISOString()});
+    const newPost = new PostMessage({
+        ...body,
+        isPublic: body.isPublic ?? true, // fallback true
+        creator: req.userId,
+        createdAt: new Date().toISOString()
+    });
 
     try{
         await newPost.save();
