@@ -9,8 +9,6 @@ const Navbar = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        const token = user?.token;
-
         const handleStorageChange = () => {
             setUser(JSON.parse(localStorage.getItem("profile")));
         };
@@ -29,7 +27,6 @@ const Navbar = () => {
 
     return (
         <div className="flex justify-between items-center border-b border-gray-300 shadow-md px-6 py-4">
-            {/* LOGO + TITLU */}
             <Link to="/" className="flex items-center space-x-2">
                 <img src={logo} alt="logo" className="h-10 w-auto" />
                 <h1 className="text-xl text-gray-800 font-semibold">Travel Memories</h1>

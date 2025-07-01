@@ -17,8 +17,6 @@ app.use(cors({
     credentials: true,
 }));
 
-
-
 app.use('/posts', postRoutes);
 app.use('/user', userRoutes);
 

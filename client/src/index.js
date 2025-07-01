@@ -10,8 +10,6 @@ import './index.css';
 import App from './App';
 import {configureStore} from "@reduxjs/toolkit";
 
-// const store = createStore(reducers, compose(applyMiddleware(thunk)));
-
 const store = configureStore({
     reducer: reducers,
 });

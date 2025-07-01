@@ -15,13 +15,17 @@ const Auth = () => {
     const [formData, setFormData] = useState(initialState);
     const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (isSignup) {
-            dispatch(signup(formData, navigate));
-        } else {
-            dispatch(signin(formData, navigate));
+        try {
+            if (isSignup) {
+                await dispatch(signup(formData, navigate));
+            } else {
+                await dispatch(signin(formData, navigate));
+            }
+        } catch (error) {
+            alert(error.message || "Something went wrong");
         }
     };
 
@@ -44,6 +48,7 @@ const Auth = () => {
             // decoded acum conține { name, email, picture, sub, ... }
             dispatch({ type: 'AUTH', data: { result: decoded, token: res?.credential } });
             navigate("/");
+            window.location.reload();
         } catch (error) {
             console.error('Error decoding Google credential:', error);
         }
