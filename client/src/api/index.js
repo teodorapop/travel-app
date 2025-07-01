@@ -12,8 +12,12 @@ API.interceptors.request.use((req) => {
 // const url = 'http://localhost:5000/posts';
 // const url = 'https://travelapp-backend-ifo6.onrender.com/posts';
 
-export const fetchPosts = () => {
-    return API.get('/posts');
+export const fetchPosts = (page) => {
+    return API.get(`/posts?page=${page}`);
+}
+
+export const fetchPostsBySearch = (searchQuery) => {
+    return API.get(`/posts/search?searchQuery=${searchQuery.search || 'none'}&tags=${searchQuery.tags}`);
 }
 
 export const createPost = (newPost) => {
