@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { FaThumbsUp, FaRegThumbsUp } from "react-icons/fa";
 
 import { deletePost, likePost } from '../../../actions/postsActions';
+import PostDetails from "../../PostDetails/PostDetails";
 
 const Post = ({ post, setCurrentId }) => {
 
@@ -41,7 +42,6 @@ const Post = ({ post, setCurrentId }) => {
                 );
             }
         }
-
         return (
             <span className="inline-flex items-center text-gray-400 text-sm font-medium space-x-1">
       <FaRegThumbsUp className="w-4 h-4" />
@@ -50,10 +50,28 @@ const Post = ({ post, setCurrentId }) => {
         );
     }
 
+    const truncate = (str, n) => {
+        return str.length > n ? str.substr(0, n) + '...' : str;
+    };
+
+    const [selectedPostId, setSelectedPostId] = React.useState(null);
+
+    const openPost = () => {
+        setSelectedPostId(post._id);
+    }
+
     return (
         <div className="bg-white shadow-md rounded-xl overflow-hidden">
 
-            <div className="relative w-full">
+            {selectedPostId && (
+                <PostDetails
+                    postId={selectedPostId}
+                    onClose={() => setSelectedPostId(null)}
+                />
+            )}
+
+
+            <div className="relative w-full" onClick={openPost}>
                 <img
                     src={post.selectedFile}
                     alt={post.title}
@@ -94,8 +112,9 @@ const Post = ({ post, setCurrentId }) => {
                 </h2>
 
                 <h5 className="text-sm text-gray-700 mb-4">
-                    {post.message}
+                    {truncate(post.message, 50)}
                 </h5>
+
 
                 {/* Butoane Like / Delete */}
                 <div className="flex justify-between items-center">

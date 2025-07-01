@@ -10,7 +10,6 @@ import { useSelector } from "react-redux";
 const Form = ({ currentId, setCurrentId}) => {
 
     const [postData, setPostData] = useState({
-        // creator: '',
         title: '',
         message: '',
         tags: '',
@@ -19,7 +18,7 @@ const Form = ({ currentId, setCurrentId}) => {
     });
 
     // update post
-    const post = useSelector((state) => currentId ? state.posts.find((p) => p._id === currentId) : null);
+    const post = useSelector((state) => currentId ? state.posts.posts.find((p) => p._id === currentId) : null);
 
     const dispatch = useDispatch();
 
