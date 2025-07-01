@@ -13,9 +13,10 @@ dotenv.config();
 app.use(bodyParser.json({ limit: '50mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://dashboard.render.com/static/srv-d18nul8gjchc739cjefg'], // înlocuiește cu domeniul tău
+    origin: ['http://localhost:3000', 'https://travelapp-frontend-na0h.onrender.com'],
     credentials: true,
 }));
+
 
 
 app.use('/posts', postRoutes);
