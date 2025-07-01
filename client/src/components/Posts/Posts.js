@@ -7,12 +7,14 @@ const Posts = ({ setCurrentId }) => {
     const user = JSON.parse(localStorage.getItem('profile'));
 
     // filter
+    const userId = user?.result?.sub || user?.result?._id;
+
     const visiblePosts = !user
         ? (posts || []).filter(post => post.isPublic === 'public')
-        : (posts || []);
+        : (posts || []).filter(post =>
+            post.isPublic === 'public' || post.creator === userId
+        );
 
-
-    console.log(posts);
 
     return (
         !visiblePosts?.length ? (
